@@ -1,0 +1,21 @@
+#main{
+    display: flex;
+}
+#middle{
+    margin-left: 14%;
+    width: 50%;
+}
+#middle p{
+    font-size: 17px;
+    line-height: 22px;
+    padding-left: 2%;
+    padding-right: 3%;
+}
+#middle h2{
+    padding-left: 2%;
+    padding-right: 3%;
+    line-height: 30px;
+}
+#middle img{
+    width: 100%;
+}

@@ -1,0 +1,35 @@
+#up-right{
+    width: 18%;
+    margin-left: 2%;
+    padding-right: 10%;
+
+}
+#right>.out{
+    display: flex;
+    gap: 5%;
+}
+.out>div{
+    margin-top: 2%;
+}
+span{
+    color: red;
+}
+#subscribe{
+    background-color: yellow;
+}
+
+#sub{
+    background-color: yellow;
+    border: 0px;
+    color: white;
+    height: 25px;
+    font-size: 18px;
+    margin-top: 2%;
+}
+#small{
+    font-size: 14px;
+    color: rgb(197, 192, 192);
+}
+#in-email{
+    height: 25px;
+}
