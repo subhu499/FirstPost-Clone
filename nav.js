@@ -6,20 +6,25 @@ function toggleSidebar(hamburger) {
     hamburger.classList.toggle("open")
 }
 
-// var prevSelection;
 
-// function SidebarSelection(item) {
-//     if(prevSelection) {
-//         if(prevSelection === item) {
-//             item.classList.toggle("selected");
-//             prevSelection = undefined;
-//         } else {
-//             prevSelection.classList.toggle("selected");
-//             item.classList.toggle("selected");
-//             prevSelection = item;
-//         }
-//     } else {
-//         item.classList.toggle("selected");
-//         prevSelection = item;
-//     }
-// }
+function tabs(evt, Name) {
+    // Declare all variables
+    var i, tab, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tab");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tabcontent.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(Name).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
