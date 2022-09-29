@@ -1,0 +1,49 @@
+#main{
+    display: flex;
+}
+#up-middle{
+    margin-left: 15%;
+    width: 50%;
+}
+#all-news{
+    
+   
+}
+#country{
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 2%;
+}
+#title{
+    font-size: 30px;
+    margin-left: 2%;
+}
+#summary{
+    font-size: 17px;
+    margin-left: 2%;
+}
+#date{
+    font-size: 14px;
+    line-height: 1px;
+    margin-left: 2%;
+}
+#image-id{
+    width: 100%;
+    
+}
+#onframe{
+    font-size: 13px;
+    margin-left: 2%;
+}
+#detail-body{
+    font-size: 17px;
+    margin-left: 2%;
+    line-height: 25px;
+}
+#update{
+    margin-left: 2%;
+    font-size: 14px;
+}
+#up-details{
+    font-size: 13px;
+}

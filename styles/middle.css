@@ -1,10 +1,17 @@
 #main{
     display: flex;
 }
-#middle{
-    margin-left: 14%;
+#middle-main{
+    margin-left: 15%;
     width: 50%;
 }
+#middle-main img{
+    width: 100%;
+}
+#slider{
+    margin-bottom: 5%;
+}
+        
 #middle p{
     font-size: 17px;
     line-height: 22px;
@@ -18,4 +25,18 @@
 }
 #middle img{
     width: 100%;
+}
+#first-l{
+    font-size: 13px;
+}
+#inew{
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+}
+#slider>div{
+    border: 1px solid black;
+    background-color: white;
+    width: 80%;
+
 }

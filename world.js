@@ -1,9 +1,10 @@
-let india_news=async()=>{
+let world_news=async()=>{
     try {        
     let res_mid=await fetch(`https://firstpost-masai-server.herokuapp.com/WORLD`);
     let data=await res_mid.json();
     console.log(data);
     append_mid(data);
+    slider(data);
     let res_right=await fetch(`https://firstpost-masai-server.herokuapp.com/WORLD`);
     let data_right=await res_right.json();
     console.log(data_right);
@@ -13,7 +14,7 @@ let india_news=async()=>{
         console.log(error)
     }
 }
-india_news();
+world_news();
 
 const append_mid=(data)=>{
     let middle=document.querySelector("#middle");
@@ -26,6 +27,10 @@ const append_mid=(data)=>{
         title.innerText=ele.title;
         let summary=document.createElement("p");
         summary.innerText=ele.summary;
+        div.addEventListener("click",function(){
+            localStorage.setItem("data",JSON.stringify(ele));
+            window.location.href="displaynews.html";
+        })
         div.append(image,title,summary);
         middle.append(div);
     })
@@ -49,3 +54,39 @@ const append_right=(data_right)=>{
     })    
 }
 
+
+
+const slider =(data)=>{
+    try {
+        let slid=document.querySelector("#slider");
+        slid.innerHTML=null;
+        let image=document.createElement("img");
+        let div=document.createElement("div");
+        let country=document.createElement("p");
+        country.id="slider-country";
+        let title=document.createElement("p");
+        title.id="slider-title";
+        let i=0;
+        image.src=data[0].image;
+        country.innerText=data[0].cateogory;
+        title.innerText=data[0].title;
+        div.append(country,title)
+        slid.append(image,div);
+        i++;
+        setInterval(function(){
+            if(i==data.length){
+                i=0;
+            }
+            image.src=data[i].image;            
+            country.innerText=data[0].cateogory;
+            title.innerText=data[0].title;
+            i++;            
+            div.append(country,title)
+            slid.append(image,div);
+        },2000);
+
+        console.log(data);
+    } catch (error) {
+        console.log(error)
+    }
+}

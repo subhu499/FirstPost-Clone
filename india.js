@@ -4,7 +4,7 @@ let india_news=async()=>{
     let data=await res_mid.json();
     console.log(data);
     append_mid(data);
-    // append_slider(data);
+    slider(data);
     let res_right=await fetch(`https://firstpost-masai-server.herokuapp.com/INDIA`);
     let data_right=await res_right.json();
     console.log(data_right);
@@ -49,19 +49,41 @@ const append_right=(data_right)=>{
     })    
 }
 
-// const append_slider=(data)=>{
-//     console.log("main");
-//     for(let i=0;i<data.length;i++){
-//         if(i==data.length){
-//             i=0;
-//         }
-//         let slid=document.querySelector("slider");
-//         let image=document.createElement("img");
-//         image.src=data[i].image;
-//         slid.append(image);
- 
-//     }
-//       }
+const slider =(data)=>{
+    try {
+        let slid=document.querySelector("#slider");
+        slid.innerHTML=null;
+        let image=document.createElement("img");
+        let div=document.createElement("div");
+        let country=document.createElement("p");
+        country.id="slider-country";
+        let title=document.createElement("p");
+        title.id="slider-title";
+        let i=0;
+        image.src=data[0].image;
+        country.innerText=data[0].cateogory;
+        title.innerText=data[0].title;
+        div.append(country,title)
+        slid.append(image,div);
+        i++;
+        setInterval(function(){
+            if(i==data.length){
+                i=0;
+            }
+            image.src=data[i].image;            
+            country.innerText=data[0].cateogory;
+            title.innerText=data[0].title;
+            i++;            
+            div.append(country,title)
+            slid.append(image,div);
+        },2000);
+
+        console.log(data);
+    } catch (error) {
+        console.log(error)
+    }
+}
+
 
 
 
