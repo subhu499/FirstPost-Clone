@@ -1,14 +1,27 @@
 let api= `https://firstpost-masai-server.herokuapp.com/ENTERTAINMENT`
 
-let data=async ()=>{
+let data=async (api)=>{
     let res=await fetch(api);
     let data1=await res.json();
      appendnews(data1)
-     appendvideo(data1)
+    //  appendvideo(data1)
+     sideappend(data1)
+     
     console.log(data1)
 }
-data();
+data(api);
 
+let api2 = `https://firstpost-masai-server.herokuapp.com/HOME-PAGE`
+let mostread=async (api)=>{
+    let res=await fetch(api);
+    let data1=await res.json();
+     
+    //  appendvideo(data1)
+     sideappend(data1)
+     
+    console.log(data1)
+}
+mostread(api2);
 
 let appendslider = () =>{
     let main = document.createElement("div");
@@ -105,6 +118,59 @@ let appendvideo=(data)=>{
 
     })
 }
+
+
+
+let sideappend=(data)=>{
+    let container=document.getElementById("container1")
+    let counter=0
+
+    container.innerHTML=null;
+
+    data.map(function(el){
+        counter++
+        let head=document.createElement("h2")
+        head.innerText="MOST READ";
+        let div=document.createElement("div");
+        div.setAttribute("id","sidebar")
+        let div1=document.createElement("div");
+        let num=document.createElement("h2")
+        num.innerText=counter;
+
+        let div3=document.createElement("div");
+        div3.setAttribute("id","countshad");
+        
+        let div2=document.createElement("div");
+        let h3=document.createElement("h3")
+        let p=document.createElement("p")
+        h3.innerText=el.title;
+        p.innerText=el.summary
+
+
+        div1.append(num,div3);
+        div2.append(h3,p)
+
+
+        
+        div.append(div1,div2);
+
+        container.append(div)
+
+
+        
+    })
+}
+let i=0;
+setInterval(function(){
+    let imageslider = ["https://images.firstpost.com/wp-content/uploads/fpranking/1664441045446.jpg?impolicy=website&width=640&height=362","https://images.firstpost.com/wp-content/uploads/fpranking/1664423223134.jpg?impolicy=website&width=640&height=362","https://images.firstpost.com/wp-content/uploads/fpranking/166444090652.jpg?impolicy=website&width=640&height=362"]
+    
+    let slider =document.getElementById("imgslider");
+    slider.src=imageslider[i];
+    i++;
+    if(i>=3){
+        i=0;
+    }
+},1000)
 
 
 
