@@ -1,4 +1,5 @@
 
+
 let btn1=document.getElementById("btn1");
 let btn2=document.getElementById("btn2");
 let btn3=document.getElementById("btn3");
@@ -66,9 +67,8 @@ async function opinion(){
     appendData(data);
 }
 opinion();
-
+let bottom_container=document.getElementById("bottom-container");
 function appendData(data){
-    let bottom_container=document.getElementById("bottom-container");
     data.forEach(el => {
         let content=document.createElement("div");
         content.setAttribute("class","content");
@@ -109,5 +109,56 @@ btn.addEventListener("click",function(){
 function subscribe(){
     sub.innerText="Thank you for subscribing!";
 }
+
+
+let read=[
+    {
+        "num":"1",
+        "title":"Mumbai: Model ends life by hanging herself in hotel room, 'suicide note' found",
+        "desc":"An official said the body of the deceased, identified as Akanksha Mohan, was recovered on Wednesday evening, adding the police suspect that she took the extreme step out of depression as her note says she was 'unhappy' and needed peace",
+    },
+    {
+        "num":"2",
+        "title":"Centre upgrades Mukesh Ambani's security cover to Z plus after threat review",
+        "desc":"The recommendation was formalised by the Union home ministry after receiving inputs, on the perceived threat perception to the businessman, by central intelligence and security agencies",
+    },
+    {
+        "num":"3",
+        "title":"Centre upgrades Mukesh Ambani's security cover to Z plus after threat review",
+        "desc":"The recommendation was formalised by the Union home ministry after receiving inputs, on the perceived threat perception to the businessman, by central intelligence and security agencies"
+    },
+    {
+        "num":"4",
+        "title":"Rahul lacks 'systematic seriousness', he can leave meeting midway and go for jogging, says Himanta",
+        "desc":"Assam Chief Minister Himanta Biswa Sarma has slammed Congress leader Rahul Gandhi saying he does not have systematic seriousness, wants to have power without responsibility and is not fit for politics",
+    },
+    {
+        "num":"5",
+        "title":"Explained: The reason behind Queen Elizabeth's death",
+        "desc":"The certificate released by the National Records of Scotland shows Queen Elizabeth II’s death was registered on 16 September by the Queen's only daughter, Princess Anne. The cause of death was given only as ‘old age’, with no other cause listed",
+    },
+]
+
+let most_read=document.getElementById("mostR");
+mostRead(read);
+
+function mostRead(read){
+    console.log(read);
+    read.forEach(el => {
+        let mr=document.createElement("mr");
+        mr.setAttribute("class","mr");
+        let number=document.createElement("h1");
+        number.innerText=el.num;
+        let title=document.createElement("h2");
+        title.innerText=el.title;
+        let desc=document.createElement("p");
+        desc.innerText=el.desc;
+        mr.append(number,title,desc);
+        most_read.append(mr);
+    });
+}
+
+let promoted_video=document.getElementById("promoted_video");
+
 
 
