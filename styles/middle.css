@@ -34,9 +34,35 @@
     margin: auto;
     text-align: center;
 }
+#slider{
+    margin-bottom: 10%;
+}
 #slider>div{
-    border: 1px solid black;
+    position: fixed;
+    padding-top: 0.5% ;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 93%;
+    margin-left: 3%;
+    margin-top: -20%;
     background-color: white;
-    width: 80%;
+    position: relative;
+    z-index: 1;
+    height: 10%;
 
+}
+#slider p{
+    font-size: 13px;
+
+}
+#slider h2{
+    margin-top: -1.5%;
+}
+.share_cl{
+    display: flex;
+    justify-content: space-between;
+}
+.share_cl>shareimg{
+    width: 10px;
+    height: 10vh;
 }

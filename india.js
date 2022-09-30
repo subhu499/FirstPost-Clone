@@ -20,13 +20,28 @@ const append_mid=(data)=>{
     middle.innerHTML=null;
     data.forEach((ele)=>{
         let div=document.createElement("div");
+        let div_data=document.createElement("div");
+        let div_share=document.createElement("div");
+
+        div_share.className="share_cl"
         let image=document.createElement("img");
         image.src=ele.image;
         let title=document.createElement("h2");
         title.innerText=ele.title;
         let summary=document.createElement("p");
         summary.innerText=ele.summary;
-        div.append(image,title,summary);
+        
+        let count=document.createElement("p");
+        count.innerText=ele.cateogory;
+        count.className="mid-count";
+
+        let shareimg=document.createElement("img");
+        shareimg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRS73qHKRnu8aEj-j6dWABcHumWPOGDctcIw&usqp=CAU";
+        shareimg.className="shareimg";
+
+        div_share.append(count,shareimg);
+        div_data.append(div_share,title,summary)
+        div.append(image,div_data);
         middle.append(div);
     })
 }
@@ -57,7 +72,7 @@ const slider =(data)=>{
         let div=document.createElement("div");
         let country=document.createElement("p");
         country.id="slider-country";
-        let title=document.createElement("p");
+        let title=document.createElement("h2");
         title.id="slider-title";
         let i=0;
         image.src=data[0].image;
@@ -71,12 +86,12 @@ const slider =(data)=>{
                 i=0;
             }
             image.src=data[i].image;            
-            country.innerText=data[0].cateogory;
-            title.innerText=data[0].title;
+            country.innerText=data[i].cateogory;
+            title.innerText=data[i].title;
             i++;            
             div.append(country,title)
             slid.append(image,div);
-        },2000);
+        },4000);
 
         console.log(data);
     } catch (error) {

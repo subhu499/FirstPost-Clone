@@ -60,17 +60,23 @@ const slider =(data)=>{
     try {
         let slid=document.querySelector("#slider");
         slid.innerHTML=null;
+        
+
         let image=document.createElement("img");
         let div=document.createElement("div");
         let country=document.createElement("p");
         country.id="slider-country";
-        let title=document.createElement("p");
+        let title=document.createElement("h2");
         title.id="slider-title";
         let i=0;
         image.src=data[0].image;
         country.innerText=data[0].cateogory;
         title.innerText=data[0].title;
         div.append(country,title)
+        slid.addEventListener("click",function(){
+            localStorage.setItem("data",JSON.stringify(data[0]));
+            window.location.href="displaynews.html";
+        })
         slid.append(image,div);
         i++;
         setInterval(function(){
@@ -78,12 +84,16 @@ const slider =(data)=>{
                 i=0;
             }
             image.src=data[i].image;            
-            country.innerText=data[0].cateogory;
-            title.innerText=data[0].title;
+            country.innerText=data[i].cateogory;
+            title.innerText=data[i].title;
+            slid.addEventListener("click",function(){
+                localStorage.setItem("data",JSON.stringify(data[i]));
+                window.location.href="displaynews.html";
+            })
             i++;            
             div.append(country,title)
             slid.append(image,div);
-        },2000);
+        },4000);
 
         console.log(data);
     } catch (error) {
