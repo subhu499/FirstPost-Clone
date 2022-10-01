@@ -1,4 +1,4 @@
-let api= `https://firstpost-masai-server.herokuapp.com/ENTERTAINMENT`
+let api= `https://firstpost-masai-server.herokuapp.com/SPORTS`
 
 let clickdata=[];
 let data=async ()=>{
@@ -48,7 +48,7 @@ if(c!=5){
         let subhead=document.createElement('p');
 
         img.src=el.image
-        p.innerText="Entertainment"
+        p.innerText="Sports"
         // divicon.append(p,<i class="fa-thin fa-arrow-up-from-square"></i>);
         heading.innerText=el.title;
         subhead=el.summary
