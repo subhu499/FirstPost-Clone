@@ -150,7 +150,11 @@ C50,24.1,51.1,25.2,51.1,26.5" />
             <li class="nav-events ">
                 <a href="https://www.firstpost.com/tech/" title="Tech" class="">Tech</a>
             </li>
-
+            <li class="nav-events ">
+            <a href="netrasuraksha.html" title="netrasuraksha" class="">
+            <img src="https://www.firstpost.com/static/images/netrasuraksha_L2_103x25px.jpg" alt="netrasuraksha" title="netrasuraksha" width="103" height="25">
+            </a>
+            </li>
         </ul>
     </div>
 </nav>
