@@ -22,8 +22,9 @@
     padding-left: 2%;
     padding-right: 3%;
     line-height: 30px;
+    margin-top: -2%;
 }
-#middle img{
+#middle>div>img{
     width: 100%;
 }
 #first-l{
@@ -61,8 +62,25 @@
 .share_cl{
     display: flex;
     justify-content: space-between;
+    margin-top: -1%;
+
 }
-.share_cl>shareimg{
-    width: 10px;
-    height: 10vh;
+.share_cl>p{
+    font-size: 10px;
+}
+.shareimg{
+    width: 20PX;
+    height: 18PX;
+    padding-right: 2%;
+    margin-top: 1.5%;
+    cursor: pointer;
+    
+}
+#middle>div>div{
+    background-color: white;
+    position: relative;
+    z-index: 100;
+    margin-top: -5%;
+    margin-left: 3%;
+    
 }

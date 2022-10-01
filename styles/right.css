@@ -9,6 +9,10 @@
     display: flex;
     gap: 5%;
 }
+/*
+#right>div>h2{
+    font-style:'Playfair Display' ;
+} */
 .out>div{
     margin-top: 2%;
 }

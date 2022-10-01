@@ -21,17 +21,30 @@ const append_mid=(data)=>{
     middle.innerHTML=null;
     data.forEach((ele)=>{
         let div=document.createElement("div");
+        let div_data=document.createElement("div");
+        let div_share=document.createElement("div");
+
+        div_share.className="share_cl"
         let image=document.createElement("img");
         image.src=ele.image;
         let title=document.createElement("h2");
         title.innerText=ele.title;
         let summary=document.createElement("p");
         summary.innerText=ele.summary;
-        div.addEventListener("click",function(){
-            localStorage.setItem("data",JSON.stringify(ele));
-            window.location.href="displaynews.html";
-        })
-        div.append(image,title,summary);
+        
+        let count=document.createElement("p");
+        count.innerText=ele.cateogory;
+        count.style.fontSize="12px"
+        count.className="mid-count";
+
+        let shareimg=document.createElement("img");
+        shareimg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRS73qHKRnu8aEj-j6dWABcHumWPOGDctcIw&usqp=CAU";
+        shareimg.className="shareimg";
+        shareimg.style.width="3%";
+
+        div_share.append(count,shareimg);
+        div_data.append(div_share,title,summary);
+        div.append(image,div_data);
         middle.append(div);
     })
 }

@@ -33,14 +33,16 @@ const append_mid=(data)=>{
         
         let count=document.createElement("p");
         count.innerText=ele.cateogory;
+        count.style.fontSize="12px"
         count.className="mid-count";
 
         let shareimg=document.createElement("img");
         shareimg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRS73qHKRnu8aEj-j6dWABcHumWPOGDctcIw&usqp=CAU";
         shareimg.className="shareimg";
+        shareimg.style.width="3%";
 
         div_share.append(count,shareimg);
-        div_data.append(div_share,title,summary)
+        div_data.append(div_share,title,summary);
         div.append(image,div_data);
         middle.append(div);
     })
