@@ -21,6 +21,7 @@ const append_mid=(data)=>{
     data.forEach((ele)=>{
         let div=document.createElement("div");
         let div_data=document.createElement("div");
+        div_data.className="ucl"
         let div_share=document.createElement("div");
 
         div_share.className="share_cl"

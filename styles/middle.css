@@ -108,3 +108,24 @@
     background-color: black;
     width: 40%;
 }
+.ucl{
+    height: 150px;
+}
+.ucl  h2{
+    
+    background-color: white;
+}
+.share_cl >p{
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+#slider-country{
+   
+    margin-bottom: 10px;
+}
+#up-right #sub-div{
+    width: 250px;
+    height: auto;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
