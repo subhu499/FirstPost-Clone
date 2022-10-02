@@ -1,0 +1,125 @@
+.category-name {
+    font: 600 12px/15px Arial;
+    color: #585858;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 5px;
+    z-index: 1;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.category-name:before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    background: #fad65f;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    z-index: -1;
+}
+
+.main-story-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: Bold 22px/23px Arial;
+    letter-spacing: 0;
+    color: #000;
+    position: relative;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main-story-title span {
+    display: inline-block;
+    width: 83px;
+    height: 4px;
+    background: #fad65f;
+    margin-top: 8px;
+    position: relative;
+}
+
+.main-story-thumb-wrap {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.big-thumb {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.big-thumb .thumb-img {
+    position: relative;
+}
+
+.big-thumb .category-name {
+    margin-left: 0;
+}
+
+.big-thumb .title-wrap {
+    background: #fff;
+    padding: 5px 5px 10px;
+    margin: -28px 0 0 10px;
+    position: relative;
+}
+
+.big-thumb .main-title {
+    font: 700 22px/25px "Playfair Display", sans-serif;
+    letter-spacing: 0;
+    color: #000;
+    margin-top: 15px;
+}
+
+.big-thumb .thumb-social-wrap {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
+
+.big-thumb .thumb-social-wrap .thumb-social {
+    bottom: 23px;
+    left: -36px;
+}
+
+.big-thumb .copy {
+    font: 400 13px/18px Arial;
+    letter-spacing: 0;
+    color: #333;
+    margin-top: 10px;
+}
+
+.common-widget {
+    margin: 0 10px 30px;
+}
+
+.top-head-title {
+    font: 700 18px/22px "Playfair Display";
+    letter-spacing: 0;
+    color: #000;
+    margin: 0 0 5px;
+}
+
+.other-sites-links {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.copywrite {
+    display: flex;
+    justify-content: center;
+    font: 400 10px/22px Arial;
+    letter-spacing: 0;
+    color: #333;
+}
+
+.tnc-links li a {
+    font: 700 10px/10px Arial;
+    letter-spacing: 0;
+    color: #000;
+}
