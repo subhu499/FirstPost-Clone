@@ -1,0 +1,110 @@
+#main{
+    display: flex;
+}
+#middle-main{
+    margin-left: 15%;
+    width: 50%;
+}
+#middle-main img{
+    width: 100%;
+}
+#slider{
+    margin-bottom: 5%;
+}
+        
+#middle p{
+    font-size: 17px;
+    line-height: 22px;
+    padding-left: 2%;
+    padding-right: 3%;
+}
+#middle h2{
+    padding-left: 2%;
+    padding-right: 3%;
+    line-height: 30px;
+    margin-top: -2%;
+}
+#middle>div>img{
+    width: 100%;
+}
+#first-l{
+    font-size: 13px;
+}
+#inew{
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+}
+#slider{
+    margin-bottom: 10%;
+}
+#slider>div{
+    position: fixed;
+    padding-top: 0.5% ;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 93%;
+    margin-left: 3%;
+    margin-top: -20%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    height: 10%;
+
+}
+#slider p{
+    font-size: 13px;
+
+}
+#slider h2{
+    margin-top: -1.5%;
+}
+.share_cl{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1%;
+
+}
+.share_cl>p{
+    font-size: 10px;
+}
+.shareimg{
+    width: 20PX;
+    height: 18PX;
+    padding-right: 2%;
+    margin-top: 1.5%;
+    cursor: pointer;
+    
+}
+#middle>div>div{
+    background-color: white;
+    position: relative;
+    z-index: 100;
+    margin-top: -5%;
+    margin-left: 3%;
+    
+}
+#slid-line{
+    display: flex;
+    margin-top: -1%;
+    gap: 2px;
+}
+#left-line{
+    height: 1px;
+    background-color: black;
+    width: 40%;
+    border: 0px;
+}
+#mid-line{
+    border: 0px;
+    height: 7px;
+    background-color: rgb(250,214,95);
+    width: 15%;
+    
+}
+#right-line{
+    height: 1px;
+    border: 0px;
+    background-color: black;
+    width: 40%;
+}
