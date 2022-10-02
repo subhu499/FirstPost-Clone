@@ -198,11 +198,13 @@ const append_mid=(data)=>{
         let div=document.createElement("div");
         let image=document.createElement("img");
         image.src=ele.image;
+        let div2=document.createElement("div");
         let title=document.createElement("h2");
         title.innerText=ele.title;
         let summary=document.createElement("p");
         summary.innerText=ele.summary;
-        div.append(image,title,summary);
+        div2.append(title,summary)
+        div.append(image,div2);
         middle.append(div);
     })
 }
