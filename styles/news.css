@@ -1,7 +1,7 @@
-#main{
+#rmain{
     display: flex;
 }
-#up-middle{
+#rup-middle{
     margin-left: 15%;
     width: 50%;
 }
@@ -9,41 +9,41 @@
     
    
 }
-#country{
+#rcountry{
     font-size: 12px;
     font-weight: 700;
     margin-left: 2%;
 }
-#title{
+#rtitle{
     font-size: 30px;
     margin-left: 2%;
 }
-#summary{
+#rsummary{
     font-size: 17px;
     margin-left: 2%;
 }
-#date{
+#rdate{
     font-size: 14px;
     line-height: 1px;
     margin-left: 2%;
 }
-#image-id{
+#rimage-id{
     width: 100%;
     
 }
-#onframe{
+#ronframe{
     font-size: 13px;
     margin-left: 2%;
 }
-#detail-body{
+#rdetail-body{
     font-size: 17px;
     margin-left: 2%;
     line-height: 25px;
 }
-#update{
+#rupdate{
     margin-left: 2%;
     font-size: 14px;
 }
-#up-details{
+#rup-details{
     font-size: 13px;
 }

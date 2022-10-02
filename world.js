@@ -36,14 +36,14 @@ let world_news=async()=>{
 world_news();
 
 const append_mid=(data)=>{
-    let middle=document.querySelector("#middle");
+    let middle=document.querySelector("#rmiddle");
     middle.innerHTML=null;
     data.forEach((ele)=>{
         let div=document.createElement("div");
         let div_data=document.createElement("div");
         let div_share=document.createElement("div");
 
-        div_share.className="share_cl"
+        div_share.className="rshare_cl"
         let image=document.createElement("img");
         image.src=ele.image;
         let title=document.createElement("h2");
@@ -54,11 +54,11 @@ const append_mid=(data)=>{
         let count=document.createElement("p");
         count.innerText=ele.cateogory;
         count.style.fontSize="12px"
-        count.className="mid-count";
+        count.className="rmid-count";
 
         let shareimg=document.createElement("img");
         shareimg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRS73qHKRnu8aEj-j6dWABcHumWPOGDctcIw&usqp=CAU";
-        shareimg.className="shareimg";
+        shareimg.className="rshareimg";
         shareimg.style.width="3%";
 
         div_share.append(count,shareimg);
@@ -73,11 +73,11 @@ const append_mid=(data)=>{
     })
 }
 const append_right=(data_right)=>{
-    let right=document.querySelector("#right");
+    let right=document.querySelector("#rright");
     right.innerHTML=null;
     data_right.forEach((ele)=>{
         let bdiv=document.createElement("div");
-        bdiv.className="out";
+        bdiv.className="rout";
         let div=document.createElement("div");  
         let num=document.createElement('h2');
         num.innerText=ele.id;      
@@ -99,16 +99,16 @@ const append_right=(data_right)=>{
 
 const slider =(data)=>{
     try {
-        let slid=document.querySelector("#slider");
+        let slid=document.querySelector("#rslider");
         slid.innerHTML=null;
         
 
         let image=document.createElement("img");
         let div=document.createElement("div");
         let country=document.createElement("p");
-        country.id="slider-country";
+        country.id="rslider-country";
         let title=document.createElement("h2");
-        title.id="slider-title";
+        title.id="rslider-title";
         let i=0;
         image.src=data[0].image;
         country.innerText=data[0].cateogory;
@@ -144,8 +144,8 @@ const slider =(data)=>{
 
 const subscribe_btn=()=>{
         
-    let subemail=document.querySelector("#in-email").value;
+    let subemail=document.querySelector("#rin-email").value;
     if(subemail!=null){
-        document.querySelector("#subscribed").innerText="Thank You for subscribing!";
+        document.querySelector("#rsubscribed").innerText="Thank You for subscribing!";
     }
 }

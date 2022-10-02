@@ -1,32 +1,32 @@
-#up-right{
+#rup-right{
     width: 20%;
     margin-left: 3%;
     padding-right: 10%;
     margin-top: 10%;
 
 }
-#right>.out{
+#rright>.rout{
     display: flex;
     gap: 5%;
 }
-#right>div{
+#rright>div{
     border: 1px solid rgb(226, 223, 223);
     padding: 1%;
 }
-#right>div>h2{
+#rright>div>h2{
     font-family : Arial-400 ;
 } 
-.out>div{
+.rout>div{
     margin-top: 2%;
 }
-#star{
+#rstar{
     color: red;
 }
-#subscribe{
+#rsubscribe{
     background-color: rgb(250,214,95);
 }
 
-#sub{
+#rsub{
     background-color: rgb(250,214,95);
     border: 0px;
     color: white;
@@ -34,19 +34,19 @@
     font-size: 18px;
     margin-top: 2%;
 }
-#small{
+#rsmall{
     font-size: 14px;
     color: rgb(197, 192, 192);
 }
-#in-email{
+#rin-email{
     height: 25px;
     margin-bottom: 2%;
 }
-#line-right{
+#rline-right{
     height: 2px;
     background-color: black;
 }
-#line-yel{
+#rline-yel{
     height: 6px;
     background-color: rgb(250,214,95);
     border: 0px;
@@ -54,12 +54,12 @@
     margin-top: -12%;
     margin-left: -1%;
 }
-#sub-div{
+#rsub-div{
     border: 1px solid rgb(226, 223, 223);
     padding: 1%;
     padding-left: 5%;
 }
-#subscribed{
+#rsubscribed{
     color: green;
     margin-top: 10%;
     font-size: 17px;
