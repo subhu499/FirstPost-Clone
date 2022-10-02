@@ -67,7 +67,7 @@ async function opinion(){
     appendData(data);
 }
 opinion();
-let bottom_container=document.getElementById("bottom-container");
+let bottom_container=document.getElementById("middle");
 function appendData(data){
     data.forEach(el => {
         let content=document.createElement("div");
@@ -75,13 +75,15 @@ function appendData(data){
         let image=document.createElement("img");
         image.setAttribute("class","img");
         image.src=el.image;
-        let title=document.createElement("h1");
+        let div=document.createElement("div");
+        let title=document.createElement("h2");
         title.setAttribute("class","title");
         title.innerText=el.title;
         let summary=document.createElement("p");
         summary.setAttribute("class","summary");
         summary.innerText=el.summary;
-        content.append(image,title,summary);
+        div.append(title,summary)
+        content.append(image,div);
         bottom_container.append(content);
     });
 }

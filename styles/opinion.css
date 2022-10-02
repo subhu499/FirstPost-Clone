@@ -30,10 +30,16 @@
 #top_content>img{
     width: 100%;
 }
+#top_content #sub_title{
+    background-color: white;
+    position: relative;
+    z-index: 100;
+    margin-top: -15%;
+    margin-left: 3%;
+}
 .btn{
     width: 40px;
     height: 8px;
-
 }
 #bottom-container{
     width: 100%;
@@ -92,4 +98,11 @@
 
 #promoted-video{
     margin-top: 100px;
+}
+#middle .content div {
+    background-color: white;
+    position: relative;
+    z-index: 100;
+    margin-top: -5%;
+    margin-left: 3%;
 }
