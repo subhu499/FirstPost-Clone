@@ -84,3 +84,27 @@
     margin-left: 3%;
     
 }
+#slid-line{
+    display: flex;
+    margin-top: -1%;
+    gap: 2px;
+}
+#left-line{
+    height: 1px;
+    background-color: black;
+    width: 40%;
+    border: 0px;
+}
+#mid-line{
+    border: 0px;
+    height: 7px;
+    background-color: rgb(250,214,95);
+    width: 15%;
+    
+}
+#right-line{
+    height: 1px;
+    border: 0px;
+    background-color: black;
+    width: 40%;
+}

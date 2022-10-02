@@ -44,6 +44,10 @@ const append_mid=(data)=>{
         div_share.append(count,shareimg);
         div_data.append(div_share,title,summary);
         div.append(image,div_data);
+        div.addEventListener("click",function(){
+            localStorage.setItem("data",JSON.stringify(ele));
+            window.location.href="displaynews.html";
+        })
         middle.append(div);
     })
 }
@@ -62,6 +66,10 @@ const append_right=(data_right)=>{
         summary.innerText=ele.summary;
         div.append(title,summary);
         bdiv.append(num,div);
+        bdiv.addEventListener("click",function(){
+            localStorage.setItem("data",JSON.stringify(ele));
+            window.location.href="displaynews.html";
+        })
         right.append(bdiv);
     })    
 }
@@ -102,5 +110,13 @@ const slider =(data)=>{
 }
 
 
+
+const subscribe_btn=()=>{
+        
+    let subemail=document.querySelector("#in-email").value;
+    if(subemail!=null){
+        document.querySelector("#subscribed").innerText="Thank You for subscribing!";
+    }
+}
 
 

@@ -2,17 +2,20 @@
     width: 20%;
     margin-left: 3%;
     padding-right: 10%;
-    margin-top: 18%;
+    margin-top: 10%;
 
 }
 #right>.out{
     display: flex;
     gap: 5%;
 }
-/*
+#right>div{
+    border: 1px solid rgb(226, 223, 223);
+    padding: 1%;
+}
 #right>div>h2{
-    font-style:'Playfair Display' ;
-} */
+    font-family : Arial-400 ;
+} 
 .out>div{
     margin-top: 2%;
 }
@@ -20,11 +23,11 @@
     color: red;
 }
 #subscribe{
-    background-color: yellow;
+    background-color: rgb(250,214,95);
 }
 
 #sub{
-    background-color: yellow;
+    background-color: rgb(250,214,95);
     border: 0px;
     color: white;
     height: 25px;
@@ -37,4 +40,27 @@
 }
 #in-email{
     height: 25px;
+    margin-bottom: 2%;
+}
+#line-right{
+    height: 2px;
+    background-color: black;
+}
+#line-yel{
+    height: 6px;
+    background-color: rgb(250,214,95);
+    border: 0px;
+    width: 60%;
+    margin-top: -12%;
+    margin-left: -1%;
+}
+#sub-div{
+    border: 1px solid rgb(226, 223, 223);
+    padding: 1%;
+    padding-left: 5%;
+}
+#subscribed{
+    color: green;
+    margin-top: 10%;
+    font-size: 17px;
 }

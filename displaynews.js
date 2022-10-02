@@ -70,3 +70,13 @@ const append_right=(data_right)=>{
         right.append(bdiv);
     })    
 }
+
+
+
+const subscribe_btn=()=>{
+        
+    let subemail=document.querySelector("#in-email").value;
+    if(subemail!=null){
+        document.querySelector("#subscribed").innerText="Thank You for subscribing!";
+    }
+}

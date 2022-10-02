@@ -1,3 +1,22 @@
+
+
+// import { footer } from "../components/footer.js";
+// import { navbar } from "../components/navbar.js";
+
+// import { closeNav, openNav, searchBox, tabs,searchClickHandler} from "../components/utility.js";
+
+// document.getElementById("navbar").innerHTML = navbar;
+
+// document.getElementById("footer").innerHTML = footer;
+
+// window.openNav = openNav;
+// window.closeNav = closeNav;
+// window.searchBox = searchBox;
+// window.tabs = tabs;
+// window.searchClickHandler = searchClickHandler;
+
+
+
 let world_news=async()=>{
     try {        
     let res_mid=await fetch(`https://firstpost-masai-server.herokuapp.com/WORLD`);
@@ -45,6 +64,11 @@ const append_mid=(data)=>{
         div_share.append(count,shareimg);
         div_data.append(div_share,title,summary);
         div.append(image,div_data);
+        div.addEventListener("click",function(){
+            console.log("data");
+            localStorage.setItem("data",JSON.stringify(ele));
+            window.location.href="displaynews.html";
+        })
         middle.append(div);
     })
 }
@@ -63,6 +87,10 @@ const append_right=(data_right)=>{
         summary.innerText=ele.summary;
         div.append(title,summary);
         bdiv.append(num,div);
+        bdiv.addEventListener("click",function(){
+            localStorage.setItem("data",JSON.stringify(ele));
+            window.location.href="displaynews.html";
+        })
         right.append(bdiv);
     })    
 }
@@ -111,5 +139,13 @@ const slider =(data)=>{
         console.log(data);
     } catch (error) {
         console.log(error)
+    }
+}
+
+const subscribe_btn=()=>{
+        
+    let subemail=document.querySelector("#in-email").value;
+    if(subemail!=null){
+        document.querySelector("#subscribed").innerText="Thank You for subscribing!";
     }
 }
