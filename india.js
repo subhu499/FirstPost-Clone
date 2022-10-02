@@ -88,7 +88,11 @@ const slider =(data)=>{
         image.src=data[0].image;
         country.innerText=data[0].cateogory;
         title.innerText=data[0].title;
-        div.append(country,title)
+        div.append(country,title);
+        slid.addEventListener("click",function(){
+            localStorage.setItem("data",JSON.stringify(data[0]));
+            window.location.href="displaynews.html";
+        })
         slid.append(image,div);
         i++;
         setInterval(function(){
@@ -98,6 +102,10 @@ const slider =(data)=>{
             image.src=data[i].image;            
             country.innerText=data[i].cateogory;
             title.innerText=data[i].title;
+            slid.addEventListener("click",function(){
+                localStorage.setItem("data",JSON.stringify(data[i]));
+                window.location.href="displaynews.html";
+            })
             i++;            
             div.append(country,title)
             slid.append(image,div);
