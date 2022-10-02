@@ -36,3 +36,34 @@
   gap:8px
 }
 
+#container1{
+  border:5px solid purple;
+  width:25%;
+  height:8000px;
+  margin-right: 150x;
+}
+
+#page{
+  display: flex;
+  gap:30px;
+  
+}
+#sidebar{
+  display:flex;
+  gap:15px
+
+}
+
+#countshad{
+  width:25px;
+  height:25px;
+  border: 2px solid pink;
+  border-radius: 100%;
+  background-color: #EFEFEF;
+  
+}
+#imgslider{
+  width:100%;
+  height:100%;
+  
+}
