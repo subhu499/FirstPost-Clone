@@ -1,10 +1,10 @@
 let india_news=async()=>{
     try {        
-    let res_mid=await fetch(`https://firstpost-masai-server.herokuapp.com/WORLD`);
+    let res_mid=await fetch(`https://firstpost-masai-server.herokuapp.com/AUTO`);
     let data=await res_mid.json();
     console.log(data);
     append_mid(data);
-    let res_right=await fetch(`https://firstpost-masai-server.herokuapp.com/WORLD`);
+    let res_right=await fetch(`https://firstpost-masai-server.herokuapp.com/AUTO`);
     let data_right=await res_right.json();
     console.log(data_right);
     append_right(data_right);
