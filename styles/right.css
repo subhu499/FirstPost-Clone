@@ -5,9 +5,34 @@
     margin-top: 10%;
 
 }
+#up-right > #upper{
+    
+    width: 250px;
+    height: 160px;
+}
+
+#up-right > #upper p{
+    max-height: 100px;
+    margin-top: 10px;
+
+}
+.out{
+    width: 260px;
+    height:auto;
+    
+}
 #right>.out{
     display: flex;
     gap: 5%;
+    padding-left: 24px;
+    
+}
+.out h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.out p {
+    margin-bottom: 15px;
 }
 #right>div{
     border: 1px solid rgb(226, 223, 223);
@@ -15,6 +40,7 @@
 }
 #right>div>h2{
     font-family : Arial-400 ;
+    margin-top: 15px;
 } 
 .out>div{
     margin-top: 2%;
@@ -63,4 +89,8 @@
     color: green;
     margin-top: 10%;
     font-size: 17px;
+}
+button{
+    margin-bottom:20px;
+    border: 2px solid red;
 }
