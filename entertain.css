@@ -1,5 +1,5 @@
 #container{
- border:5px solid red ;
+ border:0px solid red ;
  width:40%;
  height:5350px;
  align-items: center;
@@ -15,7 +15,7 @@
 }
 
 #div{
-  border:10px solid teal;
+  border:0px solid teal;
 
 }
 
@@ -50,7 +50,7 @@
   left:900px;
   height:2250px;
   width:400px;
-  border: 1px solid red;
+  border: 0px solid red;
 }
 
 
@@ -169,23 +169,24 @@ img {vertical-align: middle;}
 
 
 #paragraph{
-  font: 400 15px/18px 'Playfair Display',sans-serif;
+  font: 300 15px/18px 'Playfair Display',sans-serif;
     letter-spacing: 0;
     color: #000;
     margin-bottom: 20px;
-    margin-left: 25%;
+    margin-left: 0%;
+    text-align:left;
     
 
 }
 
 #imagess{
- width:50%;
- margin-left:25%;
+ width:80%;
+ margin-left:5%;
 }
 
 #title{
-  width:50%;
-  margin-left:25%;
+  width:80%;
+  margin-left:5%;
   margin-top: 40px;
 }
 
@@ -206,4 +207,60 @@ img {vertical-align: middle;}
   color: white;
   background-color: #fbe392;
   font-size: 14px;
+}
+
+#most{
+  
+    font: 900 Italic 20px/45px Arial;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -28px;
+    margin-left: 2px;
+
+}
+
+.title-shadow {
+ 
+  display: inline-block;
+  width: 35%;
+  height: 6px;
+  border: 2px solid  #fbe392;
+ background-color:  #fbe392;
+
+ 
+}
+
+#showon{
+  width:60%
+}
+
+#underline{
+  width:600px;
+  margin:auto;
+  display: flex;
+  margin-left:250px;
+  align-content: space-between;
+
+}
+
+#underline>hr:nth-child(1){
+
+  width:200px;
+  background-color: black;
+
+}
+#underline>hr:nth-child(3){
+ 
+  width:200px;
+  background-color: black;
+
+}
+#underline>hr:nth-child(2){
+
+  width:150px;
+  border: 3px solid #fbe392;
+  background-color: #fbe392;
+
 }

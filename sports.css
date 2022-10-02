@@ -208,3 +208,54 @@
      font-size: 14px;
    }
    
+
+   #most{
+  
+    font: 900 Italic 20px/45px Arial;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -28px;
+    margin-left: 2px;
+
+}
+
+.title-shadow {
+ 
+  display: inline-block;
+  width: 35%;
+  height: 6px;
+  border: 2px solid  #fbe392;
+ background-color:  #fbe392;
+
+ 
+}
+#underline{
+  width:600px;
+  margin:auto;
+  display: flex;
+  margin-left:250px;
+  align-content: space-between;
+
+}
+
+#underline>hr:nth-child(1){
+
+  width:200px;
+  background-color: black;
+
+}
+#underline>hr:nth-child(3){
+ 
+  width:200px;
+  background-color: black;
+
+}
+#underline>hr:nth-child(2){
+
+  width:150px;
+  border: 3px solid #fbe392;
+  background-color: #fbe392;
+
+}

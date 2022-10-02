@@ -101,12 +101,16 @@ let sideappend=(data)=>{
     <input type="text">
     <button>Subscribe</button>
 </div>`;
-
+let head=document.createElement("h2")
+head.setAttribute("id","most")
+head.innerText="MOST READ";
+let span=document.createElement("span")
+span.setAttribute("class","title-shadow")
+container.append(head,span)
     data.map(function(el){
         counter++
 
-        let head=document.createElement("h2")
-        head.innerText="MOST READ";
+      
         let div=document.createElement("div");
         div.setAttribute("id","sidebar")
         let div1=document.createElement("div");
