@@ -1,0 +1,56 @@
+#rmain{
+    display: flex;
+    width: 100%;
+    margin-right: 5%;
+}
+#rup-middle{
+    margin-left: 15%;
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+#rcountry{
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+#rtitle{
+    font-size: 30px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+#rsummary{
+    font-size: 17px;
+    margin-left: 2%;
+    margin-bottom: 3%;
+}
+#rdate{
+    font-size: 14px;
+    line-height: 1px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+#rimage-id{
+    width: 100%;
+    margin-bottom: 1%;
+    
+}
+#ronframe{
+    font-size: 13px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+#rdetail-body{
+    font-size: 17px;
+    margin-left: 2%;
+    line-height: 25px;
+}
+#rupdate{
+    margin-left: 2%;
+    font-size: 14px;
+}
+#rup-details{
+    font-size: 13px;
+}
