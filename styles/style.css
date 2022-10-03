@@ -1,69 +1,60 @@
-#container{
- border:5px solid red ;
- width:40%;
- height:8000px;
- align-items: center;
- margin-left:250px
+#container {
+  border: 5px solid red;
+  width: 40%;
+  height: 8000px;
+  align-items: center;
+  margin-left: 250px;
 }
 
-#imgnews{
-  width:100%;
+#imgnews {
+  width: 100%;
   height: 150%;
-
-
-
 }
 
-#div{
-  border:10px solid teal;
-
+#div {
+  border: 10px solid teal;
 }
 
-#para{
+#para {
   margin-bottom: 40px;
-  border:5px solid blue;
+  border: 5px solid blue;
   height: 100%x;
-  width:100%;
-  
+  width: 100%;
 }
-.headline{
-  margin-left:400px;
+.headline {
+  margin-left: 400px;
 }
- 
-.videodiv{
+
+.videodiv {
   display: flex;
   justify-content: space-between;
-  gap:8px
+  gap: 8px;
 }
 
-#container1{
-  border:5px solid purple;
-  width:25%;
-  height:8000px;
+#container1 {
+  border: 5px solid purple;
+  width: 25%;
+  height: 8000px;
   margin-right: 150x;
 }
 
-#page{
+#page {
   display: flex;
-  gap:30px;
-  
+  gap: 30px;
 }
-#sidebar{
-  display:flex;
-  gap:15px
-
+#sidebar {
+  display: flex;
+  gap: 15px;
 }
 
-#countshad{
-  width:25px;
-  height:25px;
+#countshad {
+  width: 25px;
+  height: 25px;
   border: 2px solid pink;
   border-radius: 100%;
-  background-color: #EFEFEF;
-  
+  background-color: #efefef;
 }
-#imgslider{
-  width:100%;
-  height:100%;
-  
+#imgslider {
+  width: 100%;
+  height: 100%;
 }

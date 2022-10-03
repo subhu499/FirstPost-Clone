@@ -1,86 +1,86 @@
-#main-container{
-    max-width: 80%;
-    min-height: 800px;
-    /* border: 2px solid red; */
-    display: flex;
-    margin: auto;
+#main-container {
+  max-width: 80%;
+  min-height: 800px;
+  /* border: 2px solid red; */
+  display: flex;
+  margin: auto;
 }
-#left-container{
-    width: 80%;
-    /* border: 2px solid blue; */
-    min-height: 800px;
+#left-container {
+  width: 80%;
+  /* border: 2px solid blue; */
+  min-height: 800px;
 }
-#right-container{
-    width: 25%;
-    /* border: 2px solid blue; */
-    min-height: 800px;
+#right-container {
+  width: 25%;
+  /* border: 2px solid blue; */
+  min-height: 800px;
 }
-#top-container{
-    width: 100%;
-    min-height: 550px;
-    /* border: 2px solid green; */
-    text-align: center;
+#top-container {
+  width: 100%;
+  min-height: 550px;
+  /* border: 2px solid green; */
+  text-align: center;
 }
-#top_content{
-    width: 90%;
-    min-height: 400px;
-    /* border: 1px solid black; */
-    margin-left: 5%;
+#top_content {
+  width: 90%;
+  min-height: 400px;
+  /* border: 1px solid black; */
+  margin-left: 5%;
 }
-#top_content>img{
-    width: 100%;
+#top_content > img {
+  width: 100%;
 }
-#top_content #sub_title{
-    background-color: white;
-    position: relative;
-    z-index: 100;
-    margin-top: -15%;
-    margin-left: 3%;
+#top_content #sub_title {
+  background-color: white;
+  position: relative;
+  z-index: 100;
+  margin-top: -15%;
+  margin-left: 3%;
 }
-.btn{
-    width: 40px;
-    height: 8px;
+.btn {
+  width: 40px;
+  height: 8px;
 }
-#bottom-container{
-    width: 100%;
-    min-height: 1000px;
-    /* border: 5px solid black; */
+#bottom-container {
+  width: 100%;
+  min-height: 1000px;
+  /* border: 5px solid black; */
 }
-.content{
-    /* border: 2px solid hotpink; */
-    width: 90%;
-    height: auto;
-    margin-top: 40px;
-    margin-left: 5%;
+.content {
+  /* border: 2px solid hotpink; */
+  width: 90%;
+  height: auto;
+  margin-top: 40px;
+  margin-left: 5%;
 }
-.img{
-    max-width: 100%;
-    height: 500px;
+.img {
+  max-width: 100%;
+  height: 500px;
 }
-#subscribe{
-    width:100%;
-    min-height: 300px;
-    border: 1px solid gray;
-    padding-left: 15px;
+#subscribe {
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid gray;
+  padding-left: 15px;
 }
-#subscribe>input{
-    width: 85%;
-    height: 30px;
-    border-radius: 3px;
+#subscribe > input {
+  width: 85%;
+  height: 30px;
+  border-radius: 3px;
 }
-#subscribe>#btn{
-    width: 45%;
-    height: 35px;
-    background-color: rgb(244, 190, 73);
-    border-radius: 5px;
-    color: white;
-    font-size:18px;
-    border: 0px;
+#subscribe > #btn {
+  width: 45%;
+  height: 35px;
+  background-color: rgb(244, 190, 73);
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  border: 0px;
 }
-#most-read{
-    width: 100%;
-    min-height: 200px;
-    /* border: 2px solid yellow; */
+#most-read {
+  width: 100%;
+  min-height: 200px;
+  /* border: 2px solid yellow; */
 }
 /* .mr{
     width: 100%;
@@ -88,21 +88,20 @@
     border: 2px solid green;
 } */
 
-
-#promoted-content{
-    width: 100%;
-    min-height: 300px;
-    /* border: 1px solid red; */
-    margin-top: 80px;
+#promoted-content {
+  width: 100%;
+  min-height: 300px;
+  /* border: 1px solid red; */
+  margin-top: 80px;
 }
 
-#promoted-video{
-    margin-top: 100px;
+#promoted-video {
+  margin-top: 100px;
 }
 #middle .content div {
-    background-color: white;
-    position: relative;
-    z-index: 100;
-    margin-top: -5%;
-    margin-left: 3%;
+  background-color: white;
+  position: relative;
+  z-index: 100;
+  margin-top: -5%;
+  margin-left: 3%;
 }
