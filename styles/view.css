@@ -1,0 +1,33 @@
+#bigThumbImg {
+    margin-bottom: 10px;
+}
+
+#forauthor {
+    position: relative;
+    padding-right: 15px;
+}
+
+#forauthor:after {
+    content: "";
+    height: 60%;
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    background-color: #2f2f2f;
+}
+
+#fordate {
+    padding-left: 10px;
+}
+
+#AuthorDate {
+    padding: 6px 0px;
+    display: flex;
+    font-size: 0.8rem;
+}
+
+#foronframe {
+    margin-bottom: 15px;
+    color: rgb(112, 112, 146);
+}

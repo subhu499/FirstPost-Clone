@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firstpost | Add News</title>
+    <link rel="icon" href="https://www.firstpost.com/static/images/favicon.ico">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/test.css">
+    <link rel="stylesheet" href="addnews.css">
+
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <div id="main">
+        <div id="container1">
+            <h2>For Main Pages</h2>
+            <input type="text" name="" id="image" placeholder="Add image">
+            <input type="text" id="title" placeholder="Add title">
+            <input type="text" id="summary" placeholder="Add Summary">
+            <select name="" id="cateogory">
+                <option value="WORLD">WORLD</option>
+                <option value="INDIA">INDIA</option>
+                <option value="POLITICS">POLITICS</option>
+                <option value="AUTO">AUTO</option>
+                <option value="OPINION">OPINION</option>
+                <option value="SPORTS">SPORTS</option>
+                <option value="CRICKET">CRICKET</option>
+                <option value="ENTERTAINMENT">ENTERTAINMENT</option>
+                <option value="EXPLAINERS">EXPLAINERS</option>
+                <option value="TECH">TECH</option>
+            </select>
+            <input type="text" id="date" placeholder="Add date">
+            <input type="text" id="author" placeholder="Add author">
+            <input type="text" id="onframe" placeholder="Add onframe">
+            <input type="text" id="updateddate" placeholder="Add update date">
+            <input type="text" id="body" placeholder="Add Body">
+            <button onclick="addtojson()">Submit</button>
+        </div>
+        <div>
+            <h2>For Trending</h2>
+            <input type="text" name="" id="image1" placeholder="Add image">
+            <input type="text" id="title1" placeholder="Add title">
+            <input type="text" id="summary1" placeholder="Add Summary">
+            <select name="" id="cateogory1">
+                <option value="WORLD">WORLD</option>
+                <option value="INDIA">INDIA</option>
+                <option value="POLITICS">POLITICS</option>
+                <option value="AUTO">AUTO</option>
+                <option value="OPINION">OPINION</option>
+                <option value="SPORTS">SPORTS</option>
+                <option value="CRICKET">CRICKET</option>
+                <option value="ENTERTAINMENT">ENTERTAINMENT</option>
+                <option value="EXPLAINERS">EXPLAINERS</option>
+                <option value="TECH">TECH</option>
+            </select>
+            <input type="text" id="date1" placeholder="Add date">
+            <input type="text" id="author1" placeholder="Add author">
+            <input type="text" id="onframe1" placeholder="Add onframe">
+            <input type="text" id="updateddate1" placeholder="Add update date">
+            <input type="text" id="body1" placeholder="Add Body">
+            <button onclick="addtoreanding()">Submit</button>
+        </div>
+        <div>
+            <h2>For Most Read</h2>
+            <input type="text" name="" id="image2" placeholder="Add image">
+            <input type="text" id="title2" placeholder="Add title">
+            <input type="text" id="summary2" placeholder="Add Summary">
+            <select name="" id="cateogory2">
+                <option value="WORLD">WORLD</option>
+                <option value="INDIA">INDIA</option>
+                <option value="POLITICS">POLITICS</option>
+                <option value="AUTO">AUTO</option>
+                <option value="OPINION">OPINION</option>
+                <option value="SPORTS">SPORTS</option>
+                <option value="CRICKET">CRICKET</option>
+                <option value="ENTERTAINMENT">ENTERTAINMENT</option>
+                <option value="EXPLAINERS">EXPLAINERS</option>
+                <option value="TECH">TECH</option>
+            </select>
+            <input type="text" id="date2" placeholder="Add date">
+            <input type="text" id="author2" placeholder="Add author">
+            <input type="text" id="onframe2" placeholder="Add onframe">
+            <input type="text" id="updateddate2" placeholder="Add update date">
+            <input type="text" id="body2" placeholder="Add Body">
+            <button onclick="addtomostread()">Submit</button>
+        </div>
+        <div>
+            <h2>Delete News</h2>
+            <input type="text" id="title3" placeholder="Add title">
+            <select name="" id="cateogory3">
+                <option value="WORLD">WORLD</option>
+                <option value="INDIA">INDIA</option>
+                <option value="POLITICS">POLITICS</option>
+                <option value="AUTO">AUTO</option>
+                <option value="OPINION">OPINION</option>
+                <option value="SPORTS">SPORTS</option>
+                <option value="CRICKET">CRICKET</option>
+                <option value="ENTERTAINMENT">ENTERTAINMENT</option>
+                <option value="EXPLAINERS">EXPLAINERS</option>
+                <option value="TECH">TECH</option>
+            </select>
+            <button onclick="deleteNews()">Submit</button>
+        </div>
+        <div>
+            <h2>For update</h2>
+            <input type="text" id="title4" placeholder="Add title">
+            <select name="" id="cateogory4">
+                <option value="WORLD">WORLD</option>
+                <option value="INDIA">INDIA</option>
+                <option value="POLITICS">POLITICS</option>
+                <option value="AUTO">AUTO</option>
+                <option value="OPINION">OPINION</option>
+                <option value="SPORTS">SPORTS</option>
+                <option value="CRICKET">CRICKET</option>
+                <option value="ENTERTAINMENT">ENTERTAINMENT</option>
+                <option value="EXPLAINERS">EXPLAINERS</option>
+                <option value="TECH">TECH</option>
+            </select>
+            <button onclick="updateNews()">Submit</button>
+        </div>
+        <div id="lastcontainer">
+            <label for="">Image</label>
+            <input type="text" name="" id="image4" placeholder="Add image">
+            <label for="">Add title</label>
+            <input type="text" id="title5" placeholder="Add title">
+            <label for="">Add Summary</label>
+            <input type="text" id="summary4" placeholder="Add Summary">
+            <label for="">Add date</label>
+            <input type="text" id="date4" placeholder="Add date">
+            <label for="">Add author</label>
+            <input type="text" id="author4" placeholder="Add author">
+            <label for="">Add onframe</label>
+            <input type="text" id="onframe4" placeholder="Add onframe">
+            <label for="">Add update date</label>
+            <input type="text" id="updateddate4" placeholder="Add update date">
+            <label for="">Add Body</label>
+            <input type="text" id="body4" placeholder="Add Body">
+            <button id="lastbutton">submit</button>
+        </div>
+    </div>
+    <div id="container">
+
+    </div>
+    <div id="footer">
+
+    </div>
+</body>
+
+</html>
+<script defer src="./components/import.js" type="module"></script>
+<script src="addtojson.js"></script>
+<script defer src="scripts/profile.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+<!-- <script type="text/javascript" src="https://www.firstpost.com/static/js/jquery-3.4.0.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
