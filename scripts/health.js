@@ -1,6 +1,6 @@
 document.getElementById("mainStoryTitle").innerText = "HEALTH NEWS";
 
-getData("https://firstpost-masai-server.herokuapp.com/HOME-PAGE").then(
+getData("https://firstpost1.onrender.com/api/HOME-PAGE").then(
     (res) => {
         append(res, document.querySelector(".main-content"));
     }

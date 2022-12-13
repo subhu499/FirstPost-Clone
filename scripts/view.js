@@ -69,7 +69,7 @@ let viewpage = async() => {
     let cat = localStorage.getItem("category");
     let id = localStorage.getItem("id");
     let res1 = await fetch(
-        `https://firstpost-masai-server.herokuapp.com/${cat}/${id}`
+        `https://firstpost1.onrender.com/api/${cat}/${id}`
     );
     let res2 = await res1.json();
     document.getElementById("bigThumbCategory").innerText = res2.cateogory;

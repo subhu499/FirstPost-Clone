@@ -1,5 +1,5 @@
 document.getElementById("mainStoryTitle").innerText = "Sports";
 
-getData("https://firstpost-masai-server.herokuapp.com/SPORTS").then((res) => {
+getData("https://firstpost1.onrender.com/api/SPORTS").then((res) => {
     append(res, document.querySelector(".main-content"));
 });

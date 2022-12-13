@@ -1,5 +1,5 @@
 document.getElementById("mainStoryTitle").innerText = "Auto";
 
-getData("https://firstpost-masai-server.herokuapp.com/AUTO").then((res) => {
+getData("https://firstpost1.onrender.com/api/AUTO").then((res) => {
     append(res, document.querySelector(".main-content"));
 });
