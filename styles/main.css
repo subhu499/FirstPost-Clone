@@ -845,7 +845,7 @@ header .sidenav-menu-btn span {
     font-style: normal;
     font-weight: 400;
     src: url(https://www.firstpost.com/static/fonts/playfair-display-v20-latin-regular.eot);
-    src: local(""), url(https://www.firstpost.com/static/fonts/playfair-display-v20-latin-regular.eot?#iefix) format("embedded-opentype"), url(https://www.firstpost.com/static/fonts/playfair-display-v20-latin-regular.woff2) format("woff2"), url(/static/fonts/playfair-display-v20-latin-regular.woff) format("woff"), url(https://www.firstpost.com/static/fonts/playfair-display-v20-latin-regular.ttf) format("truetype"), url(https://www.firstpost.com/static/fonts/playfair-display-v20-latin-regular.svg#PlayfairDisplay) format("svg");
+    src: local(""), url(https://images.firstpost.com/wp-content/uploads/fpranking/1670927159426.jpg?impolicy=website&width=640&height=362) format("embedded-opentype"), url(https://www.firstpost.com/static/fonts/playfair-display-v20-latin-regular.woff2) format("woff2"), url(/static/fonts/playfair-display-v20-latin-regular.woff) format("woff"), url(https://www.firstpost.com/static/fonts/playfair-display-v20-latin-regular.ttf) format("truetype"), url(https://www.firstpost.com/static/fonts/playfair-display-v20-latin-regular.svg#PlayfairDisplay) format("svg");
     font-display: swap;
 }
 

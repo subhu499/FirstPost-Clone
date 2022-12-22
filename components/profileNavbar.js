@@ -197,20 +197,20 @@ export const profileSection = `<div class="container py-5">
                     <div class="card-body">
                         <p class="mb-4"><span class="text-primary font-italic me-1">Project</span> Collaborators
                         </p>
-                        <p class="mb-1" style="font-size: .77rem;">Umesh Kumawat : <i class="fab fa-github fa-lg" style="color: #333333;"></i> <a href="https://github.com/Royanosh"> Royanosh</a></p>
+                        <p class="mb-1" style="font-size: .77rem;"> <i class="fab fa-github fa-lg" style="color: #333333;"></i> <a href="https://github.com/subhu499"> Shubham Jha</a></p>
                         <div class="progress rounded" style="height: 5px;">
                             <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p class="mt-4 mb-1" style="font-size: .77rem;">lsh Bandhu Shukla : <i class="fab fa-github fa-lg" style="color: #333333;"></i> <a href="https://github.com/Ishuklaji"> Ishuklaji</a></p>
+                        <p class="mt-4 mb-1" style="font-size: .77rem;"> <i class="fab fa-github fa-lg" style="color: #333333;"></i> <a href="https://github.com/laxmikushwaha"> Laxmi kushwaha</a></p>
                         <div class="progress rounded" style="height: 5px;">
                             <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p class="mt-4 mb-1" style="font-size: .77rem;">Shakti Prasad : <i class="fab fa-github fa-lg" style="color: #333333;"></i> <a href="https://github.com/sakti8093">
-                                sakti8093</a></p>
+                        <p class="mt-4 mb-1" style="font-size: .77rem;"> <i class="fab fa-github fa-lg" style="color: #333333;"></i> <a href="https://github.com/amityadav11">
+                        Amit Yadav</a></p>
                         <div class="progress rounded" style="height: 5px;">
                             <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p class="mt-4 mb-1" style="font-size: .77rem;">Rushikesh Mali : <i class="fab fa-github fa-lg" style="color: #333333;"></i> <a href="https://github.com/rushikesh226"> rushikesh226</a></p>
+                        <p class="mt-4 mb-1" style="font-size: .77rem;"> <i class="fab fa-github fa-lg" style="color: #333333;"></i> <a href="https://github.com/Raj9457"> Rajat Bisht  </a></p>
                         <div class="progress rounded" style="height: 5px;">
                             <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>

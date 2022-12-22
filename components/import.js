@@ -33,7 +33,7 @@ sliderDaba.innerHTML = mainStoryThumbWrap;
 
 document.querySelector(".sidebar").innerHTML = asideSidebar;
 
-getData("https://firstpost-masai-server.herokuapp.com/HEAD-NEWS").then(
+getData("https://firstpost1.onrender.com/api/HOME-PAGE").then(
     (res) => {
         for (var i = 1; i <= 3; i++) {
             let x = Math.floor(Math.random() * 15 + 1);
