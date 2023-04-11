@@ -3,7 +3,7 @@ async function checkUser() {
     (email = document.getElementById("loginEmail").value),
     (password = document.getElementById("loginPassword").value);
     console.log(email, password);
-    let res = await fetch("https://firstpost1.onrender.com/api/users");
+    let res = await fetch("https://firstpost1.onrender.com/users");
     let data = await res.json();
     console.log(data);
 

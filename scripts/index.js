@@ -11,7 +11,7 @@
 
 document.getElementById("mainStoryTitle").innerText = "Big Story";
 
-getData("https://firstpost1.onrender.com/api/HOME-PAGE").then(
+getData("https://firstpost1.onrender.com/HOME-PAGE").then(
     (res) => {
         res.forEach((element) => {
             document.querySelector(

@@ -3,7 +3,7 @@ let userid = localStorage.getItem("Userid");
 let display = async() => {
     try {
         let res1 = await fetch(
-            `https://firstpost1.onrender.com/api/users/${userid}`
+            `https://firstpost1.onrender.com/users/${userid}`
         );
         let res2 = await res1.json();
         // console.log(res2.username);

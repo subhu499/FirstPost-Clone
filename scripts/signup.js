@@ -7,7 +7,7 @@ async function addUser() {
     let repeatpwd = document.getElementById("registerRepeatPassword").value;
     let role = "customer";
 
-    let res2 = await fetch("https://firstpost1.onrender.com/api/users");
+    let res2 = await fetch("https://firstpost1.onrender.com/users");
     let data2 = await res2.json();
     console.log(data2);
     let flag = true;
@@ -32,7 +32,7 @@ async function addUser() {
         };
         console.log(user_data, "user_data");
         let res = await fetch(
-            "https://firstpost1.onrender.com/api/users", {
+            "https://firstpost1.onrender.com/users", {
                 method: "POST",
                 body: JSON.stringify(user_data),
                 headers: {
